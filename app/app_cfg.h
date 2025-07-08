@@ -9,11 +9,12 @@ extern "C" {
 #endif // __cplusplus
 
 #define TASK_STK_SIZE 1024
+
 	extern OS_STK Task1Stk[];
 	extern OS_STK Task2Stk[];
 
-	void Task1(void* p_arg);
-	void Task2(void* p_arg);
+	extern void Task1(void* p_arg);
+	extern void Task2(void* p_arg);
 
 #ifdef __cplusplus
 }

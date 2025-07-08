@@ -2,6 +2,7 @@
 #include <app_cfg.h>
 #include <stdio.h>
 
+
 int main() {
     OSInit();  // ≥ı ºªØ¶ÃC/OS-II
 
