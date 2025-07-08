@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\user\source\repos\ucosii_sim_x64\ucosii;C:\Users\user\source\repos\ucosii_sim_x64\ports\win32;C:\Users\user\source\repos\ucosii_sim_x64\ports;C:\Users\user\source\repos\ucosii_sim_x64\app;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)ucosii;$(ProjectDir)ports\win32_interface;$(ProjectDir)ports;$(ProjectDir)app;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -130,6 +130,7 @@
     <ClInclude Include="app\app_cfg.h" />
     <ClInclude Include="ports\os_cfg.h" />
     <ClInclude Include="ports\win32\os_cpu.h" />
+    <ClInclude Include="ports\win32_interface\os_cpu.h" />
     <ClInclude Include="ucosii\os.h" />
     <ClInclude Include="ucosii\os_trace.h" />
     <ClInclude Include="ucosii\ucos_ii.h" />
@@ -137,8 +138,8 @@
   <ItemGroup>
     <ClCompile Include="app\main.c" />
     <ClCompile Include="app\tasks.c" />
-    <ClCompile Include="ports\win32\os_cpu_c.c" />
-    <ClCompile Include="ports\win32\os_dbg.c" />
+    <ClCompile Include="ports\win32_interface\os_cpu_c.c" />
+    <ClCompile Include="ports\win32_interface\os_dbg.c" />
     <ClCompile Include="ucosii\os_core.c" />
     <ClCompile Include="ucosii\os_flag.c" />
     <ClCompile Include="ucosii\os_mbox.c" />
