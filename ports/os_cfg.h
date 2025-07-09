@@ -1,7 +1,12 @@
 #ifndef OS_CFG_H
 #define OS_CFG_H
 
-/* ---------------------- 任务管理 ---------------------- */
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
+
+	/* ---------------------- 任务管理 ---------------------- */
 #define OS_MAX_TASKS            62    // 最大任务数
 #define OS_LOWEST_PRIO          63    // 最低优先级
 #define OS_TASK_IDLE_STK_SIZE   128   // 空闲任务栈大小
@@ -107,5 +112,9 @@
 #define OS_TASK_SW_HOOK_EN      1u    // 启用任务切换钩子函数 OSTaskSwHook()
 #define OS_TICK_STEP_EN         1u    // 启用单步时钟节拍功能，便于调试工具 uC/OS-View 使用
 #define OS_TIME_TICK_HOOK_EN    1u    // 启用时钟节拍钩子函数 OSTimeTickHook()
+
+#ifdef __cplusplus
+}
+#endif // __cplusplus
 
 #endif /* OS_CFG_H */
