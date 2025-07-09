@@ -10,11 +10,13 @@ extern "C" {
 
 #define TASK_STK_SIZE 1024
 
-	extern OS_STK Task1Stk[];
-	extern OS_STK Task2Stk[];
+	extern OS_STK Task10Stk[];
+	extern OS_STK Task15Stk[];
+	extern OS_STK Task20Stk[];
 
-	extern void Task1(void* p_arg);
-	extern void Task2(void* p_arg);
+	extern void Task10(void* p_arg);
+	extern void Task15(void* p_arg);
+	extern void Task20(void* p_arg);
 
 #ifdef __cplusplus
 }
